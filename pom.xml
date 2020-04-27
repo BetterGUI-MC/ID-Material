@@ -5,17 +5,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>me.hsgamer.bettergui</groupId>
-  <artifactId>ExampleAddon</artifactId>
+  <artifactId>ID-Material</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>ExampleAddon</name>
-  <description>An Example addon for BetterGUI</description>
+  <name>ID-Material</name>
+  <description>Support numeric ID in Material</description>
 
   <properties>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.mainClass>me.hsgamer.bettergui.exampleaddon.ExampleAddon</project.mainClass>
+    <project.mainClass>me.hsgamer.bettergui.idmaterial.Main</project.mainClass>
   </properties>
 
   <build>
@@ -86,6 +86,13 @@
       <artifactId>BetterGUI</artifactId>
       <version>2.1</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>me.goldstarplayer</groupId>
+      <artifactId>idlibrary</artifactId>
+      <version>5.0.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/ID-Library.jar</systemPath>
     </dependency>
   </dependencies>
 </project>
